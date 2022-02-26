@@ -1,0 +1,33 @@
+object Form1: TForm1
+  Left = 247
+  Height = 240
+  Top = 155
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '2.0.6.0'
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 12
+    Width = 75
+    Caption = 'listen'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Memo1: TMemo
+    Left = 14
+    Height = 155
+    Top = 45
+    Width = 294
+    TabOrder = 1
+  end
+  object TCPServer: TIdTCPServer
+    Bindings = <>
+    DefaultPort = 0
+    OnExecute = TCPServerExecute
+    left = 86
+    top = 82
+  end
+end
